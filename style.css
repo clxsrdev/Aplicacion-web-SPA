@@ -1,0 +1,247 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e9faf9;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signature {
+    font-family: 'Raleway', sans-serif;
+    color: #2f5f5c;
+    margin: 60px 0px 0px;
+    letter-spacing: 5px;
+}
+
+.main-container{
+    text-align: left;
+    font-family: 'Exo 2', sans-serif;
+    color: #3b3b3b;
+    border-radius: 10px;
+    background-color: #ffff;
+    padding: 20px;
+    width: 100%;
+    max-width: 900px;
+    height: 600px;
+    max-height: 600px;
+    margin: 80px auto;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+}
+
+.columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.input-field {
+    position: relative;
+    margin: 20px 10px;
+
+}
+
+.input-field input{
+    width: 100%;
+    height: 40px;
+    border-radius: 6px;
+    font-size: 18px;
+    padding: 0 15px;
+    padding-right: 10px;
+    border: none;
+    background: #f2f2f2;
+    color: #2f5f5c;
+    font-weight: bold;
+    outline: none;
+    text-align: right;
+    caret-color: #4d9691;
+}
+
+.input-field input.error {
+    border: 2px solid #e73727;
+}
+
+.input-field input:focus{
+    border: 2px solid #16aaa0;
+}
+
+.input-field input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+.input-field label {
+    font-family: 'Exo 2', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #3b3b3b9f;
+    font-size: 13px;
+    pointer-events: none;
+    transition: .3s;
+}
+
+input:focus ~ label {
+    top: -6.5px;
+    left: 15px;
+    font-size: 13px;
+    padding: 0 8px;
+    background: #ffff;
+    color: #047c74;
+    border-radius: 5px;
+}
+
+.select-menu {
+    width: 300px;
+    margin: 50px auto;
+}
+
+.select-btn {
+    display: flex;
+    height: 15px;
+    background: #2f5f5c;
+    padding: 20px;
+    color: #ffff;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 8px;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+.select-btn i {
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+.select-menu.active .select-btn i {
+    transform: rotate(-180deg);
+}
+
+.select-menu .options {
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 8px;
+    background: #e9faf9;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.select-menu.active .options {
+    position: absolute;
+    width: 300px;
+    display: block;
+    transition: 0.3s;
+    z-index: 2;
+}
+
+.options .option {
+    display: flex;
+    height: 55px;
+    cursor: pointer;
+    padding: 0 16px;
+    border-radius: 8px;
+    align-items: center;
+    background: #e9faf9;
+}
+
+.option:hover{
+    background: #ace2df;
+}
+
+.option i {
+    font-size: 25px;
+    margin-right: 12px;
+}
+
+.option .divide {
+    font-size: 18px;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.option .option-text {
+    font-size: 18px;
+    color: #333;
+}
+
+.results-container {
+    background: #2f5f5c;
+    border-radius: 12px;
+    padding: 42px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    max-height: 500px;
+    justify-content: space-between;
+}
+
+.result-main-text {
+    font-size: 18px;
+    font-family: 'Exo 2', sans-serif;
+    color: #ffff;
+}
+
+.result {
+    font-size: 70px;
+    font-family: 'Oswald', sans-serif;
+    color: #6ed2c0;
+    text-align: center;
+    margin: 100px 105px 0px;
+    padding: 20px;
+    border: 7px solid #0ae9c0;
+    border-radius: 50%;
+}
+
+.container-inputs i.bx.bxs-calculator {
+    display: block;
+    position: relative;
+    font-size: 200px;
+    color: #4d9691;
+    z-index: 0;
+    text-align: center;
+}
+
+.results-container .btnCalcular {
+    background-color: #6ed2c0;
+    height: 40px;
+    color: #1c3635;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: 'Exo 2' sans-serif;
+    font-weight: bold;
+    border-radius: 6px;
+    border: none;
+    margin-top: 10px;
+}
+
+.results-container .btnCalcular:hover{
+    cursor: pointer;
+    background-color: #aaf3e6;
+}
+
+.results-container .btnRestart {
+    background-color: #6ed2c0;
+    height: 40px;
+    color: #1c3635;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: 'Exo 2' sans-serif;
+    font-weight: bold;
+    border-radius: 6px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.results-container .btnRestart:hover{
+    cursor: pointer;
+    background-color: #aaf3e6;
+}
