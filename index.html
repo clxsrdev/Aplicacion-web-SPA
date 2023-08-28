@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&family=Oswald&family=Poppins:wght@300;400;600;700&family=Raleway:ital@0;1&family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1 class="signature">CLXSRDEV</h1>
+    </header>
+
+    <section class="main-container">   
+
+        <div class="columns">
+            <div class="container-inputs">
+                <h3>Ingresa los números</h3>
+                <div class="input-field">
+                    <input id="numberOne" class="input_numberTwo" type="number" required>
+                    <label for="numberOne" class="pretexts">Cantidad 1</label>
+                </div>
+                <div class="input-field">
+                    <input id="numberTwo" class="input_numberTwo" type="number" required>
+                    <label for="numberTwo" class="pretexts">Cantidad 2 <span class="alert"></span> </label>
+                </div>
+
+                <div class="select-menu">
+                    <div class="select-btn">
+                        <span class="sBtn-text">Selecciona la operación</span>
+                        <i class="bx bx-chevron-down"></i>
+                    </div>
+        
+                    <ul class="options">
+                        <li class="option">
+                            <i class='bx bx-plus'></i>
+                            <span class="option-text">Suma</span>
+                        </li>
+                        <li class="option">
+                            <i class='bx bx-minus'></i>
+                            <span class="option-text">Resta</span>
+                        </li>
+                        <li class="option">
+                            <i class='bx bx-x'></i>
+                            <span class="option-text">Multiplicación</span>
+                        </li>
+                        <li class="option">
+                            <h6 class="divide">/</h6>
+                            <span class="option-text">División</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <i class='bx bxs-calculator' ></i>
+
+            </div>
+    
+            <div class="results-container">
+                <div class="results">
+                    <p class="result-main-text">El resultado es de:</p>
+                    <p id="result" class="result">0</p>
+                </div>
+                <button id="calcular" class="btnCalcular">Calcular</button>
+                <button id="reiniciar" class="btnRestart">Reiniciar</button>
+            </div>
+        </div>
+
+
+        
+
+    </section>
+
+    <script src="/script.js"></script>
+
+</body>
+</html>
