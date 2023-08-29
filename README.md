@@ -1,2 +1,2 @@
 # Aplicacion-web-SPA
-Página sobre una calculadora para realizar operaciones aritméticas básicas con HTML, CSS y JQuery(JS)
+Page about a calculator for performing basic arithmetic operations using HTML, CSS, and jQuery (JS).
